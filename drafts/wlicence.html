@@ -1,0 +1,180 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("Office settings not found");
+	}
+	function save()
+	{
+		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
+		sessionStorage.setItem("nameaddress", document.getElementById("nameaddress").value);
+		sessionStorage.setItem("shopnameaddress", document.getElementById("shopnameaddress").value);
+		sessionStorage.setItem("activities", document.getElementById("activities").value);
+		sessionStorage.setItem("wardbuilding", document.getElementById("wardbuilding").value);
+		sessionStorage.setItem("licfrom", document.getElementById("licfrom").value);
+		sessionStorage.setItem("licto", document.getElementById("licto").value);
+		sessionStorage.setItem("licfee", document.getElementById("licfee").value);
+		sessionStorage.setItem("feeno", document.getElementById("feeno").value);
+		sessionStorage.setItem("feedate", document.getElementById("feedate").value);
+		sessionStorage.setItem("ptfee", document.getElementById("ptfee").value);
+		sessionStorage.setItem("ptno", document.getElementById("ptno").value);
+		sessionStorage.setItem("ptdate", document.getElementById("ptdate").value);
+		sessionStorage.setItem("details", document.getElementById("details").value);
+
+
+
+
+
+		window.open("licence.html", "_BLANK")
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<center>
+	<h2><u> ഫാക്ടറികൾ, വ്യാപാരങ്ങൾ, സംരഭങ്ങൾ മുതലായവയ്ക്കുള്ള ലൈസൻസ്</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="no">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				തീയതി
+			</td>
+			<td>
+				<input type=text id="date">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസിയുടെ പേരും മേൽവിലാസവും
+			</td>
+			<td>
+				<input type=text id="nameaddress">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 സ്ഥാപനത്തിന്റെ പേരും സ്ഥലനാമവും
+			</td>
+			<td>
+				<input type=text id="shopnameaddress">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ലൈസൻസ് നൽകിയിട്ടുള്ള പ്രവർത്തനങ്ങൾ
+			</td>
+			<td>
+				<input type=text id="activities">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				  കെട്ടിടത്തിന്റെ നമ്പരും വാർഡ് നമ്പരും
+			</td>
+			<td>
+				<input type=text id="wardbuilding">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ലൈസൻസ് കാലയളവ്
+			</td>
+			<td>
+				<input type=text id="licfrom"> മുതൽ <input type=text id="licto"> വരെ
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h4><u> ലൈസൻസ് ഫീ സംബന്ധിച്ച വിവരങ്ങൾ </u> </h4>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് ഫീസ്
+			</td>
+			<td>
+				<input type=text id="licfee">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് നമ്പ‍ർ
+			</td>
+			<td>
+				<input type=text id="feeno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് തീയതി
+			</td>
+			<td>
+				<input type=text id="feedate">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h4><u> തൊഴിൽകരം സംബന്ധിച്ച വിവരങ്ങൾ </u> </h4>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				തൊഴിൽകരം
+			</td>
+			<td>
+				<input type=text id="ptfee">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് നമ്പ‍ർ
+			</td>
+			<td>
+				<input type=text id="ptno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് തീയതി
+			</td>
+			<td>
+				<input type=text id="ptdate">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഹാജരാക്കിയ നിരാക്ഷേപ സാക്ഷ്യപത്രങ്ങളുടെ വിശദാംശങ്ങൾ
+			</td>
+			<td>
+				<input type=text id="details">
+			</td>
+		</tr>
+
+
+		<tr>
+			<td></td>
+			<td>
+				<p> </p>
+				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>

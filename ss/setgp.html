@@ -1,0 +1,109 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("gpname")==null)
+	{
+		console.log("No value");
+	}
+	function save()
+	{
+		if(document.getElementById("gpname").value=="" || document.getElementById("gppostoffice").value=="" || document.getElementById("gpdistrict").value=="" || document.getElementById("gppincode").value=="" || document.getElementById("gpemail").value=="" || document.getElementById("gpphone").value=="" )
+		{
+			window.alert("Enter all values");
+
+		}
+		else
+		{
+			console.log("Save button clicked");
+			localStorage.setItem("gpname", document.getElementById("gpname").value)
+			localStorage.setItem("gppostoffice", document.getElementById("gppostoffice").value)
+			localStorage.setItem("gpdistrict", document.getElementById("gpdistrict").value)
+			localStorage.setItem("gppincode", document.getElementById("gppincode").value)
+			localStorage.setItem("gpemail", document.getElementById("gpemail").value)
+			localStorage.setItem("gpphone", document.getElementById("gpphone").value)
+
+			window.alert("Data Saved");
+			window.location.href = "../drafts/dirhome.html";
+		}
+
+
+
+
+
+
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="../index.html"><h3> ⬅ Go back to Home Page</h3></a>
+<center>
+	<h2><u> Basic Details</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				പഞ്ചായത്തിന്റെ പേര്
+			</td>
+			<td>
+				<input type=text id="gpname"> ഗ്രാമപഞ്ചായത്ത്
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പോസ്റ്റ് ഓഫീസ്
+			</td>
+			<td>
+				<input type=text id="gppostoffice">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ജില്ല
+			</td>
+			<td>
+				<input type=text id="gpdistrict">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പിൻകോഡ്
+			</td>
+			<td>
+				<input type=text id="gppincode">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഇ-മെയിൽ
+			</td>
+			<td>
+				<input type=text id="gpemail">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഫോൺ നമ്പർ
+			</td>
+			<td>
+				<input type=text id="gpphone">
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<input type ="image" src="../images/buttonsave.png" onclick="save()">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<a href="../index.html"> <input type ="image" src="../images/buttoncancel.png"> </a>
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>

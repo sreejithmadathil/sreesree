@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Common certificate format created by Arun Haridas</title>
+
+    <script>
+
+  alert("ഇനി ലഭ്യമാകുന്ന റിപ്പോർട്ട് CTRL+A ഉപയോഗിച്ച് സെലക്ട് ചെയ്യുക ശേഷം CTRV+C ചയ്ത് കോപ്പി ചെയ്ത് ആയത് ILGMS ടെംപ്ലേറ്റിൽ CTRL+V ഉപയോഗിച്ച് പേസ്റ്റ് ചെയ്ത് ആവശ്യമായ തിരുത്തലുകൾ വരുത്തി ഉപയോഗിക്കുക ");
+</script>
+  <style>
+    td{
+      font-size: 12px; font-family: sans-serif;
+    }
+  </style>
+
+  </head>
+  <body>
+    <table width="100%" border=1>
+      <tr width=100%>
+        <td align="center">
+          <img src="Panchayat_Emblem.jpg" height="75"/>
+          <table width="100%" border="0">
+            <tr>
+              <td align="left">
+                ലൈസൻസ് നമ്പർ :<script> document.write(sessionStorage.getItem("no")) </script>
+              </td>
+              <td align="right" >
+                തീയതി : <script> document.write(sessionStorage.getItem("date")) </script>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" colspan=2>
+                 <script>document.write(localStorage.getItem("gpname"));</script> ഗ്രാമപഞ്ചായത്തിൽ നിന്നും <br/> 1998 ലെ കേരള പഞ്ചായത്ത് രാജ് (പന്നികൾക്കും പട്ടികൾക്കും ലൈസൻസ് നൽകൽ) <br/> ചട്ടങ്ങൾ അനുസരിച്ച് നൽകുന്ന
+
+                <br/>
+                <h3> പന്നികളെയും പട്ടികളെയും വളർത്തുന്നതിനുള്ള/സൂക്ഷിക്കുന്നതിനുള്ള ലൈസൻസ് <h3>
+              </td>
+            </tr>
+          </table>
+
+          <table width="100%" border=1>
+            <tr>
+              <td valign="top" align="center">
+                1
+              </td>
+              <td align="left" valign="top" width="35%">
+                ലൈസൻസിയുടെ പേരും മേൽവിലാസവും ഫോൺനമ്പരും
+              </td>
+              <td align="left" valign="top" width=60%>
+                <script> document.write(sessionStorage.getItem("name")) </script>
+                <br/>
+                <script> document.write(sessionStorage.getItem("address")) </script>
+                <br/>
+                <script> document.write(sessionStorage.getItem("phone")) </script>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center">
+                2
+              </td>
+              <td valign="top" width="35%" align="left">
+                ലൈസൻസ് ലഭിച്ച മൃഗത്തെ സംബന്ധിച്ച വിവരങ്ങൾ
+              </td>
+              <td valign="top" width=60%>
+                <table width="100%" border=1>
+                  <tr>
+                    <td> ഇനം </td>
+                    <td> എണ്ണം </td>
+                    <td> പ്രായം </td>
+                    <td> നിറം </td>
+                    <td> ആൺ/ പെൺ </td>
+                  </tr>
+                  <tr>
+                    <td> <script> document.write(sessionStorage.getItem("type")) </script> </td>
+                    <td> <script> document.write(sessionStorage.getItem("nos")) </script> </td>
+                    <td> <script> document.write(sessionStorage.getItem("age")) </script> </td>
+                    <td> <script> document.write(sessionStorage.getItem("color")) </script> </td>
+                    <td> <script> document.write(sessionStorage.getItem("mf")) </script> </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center">
+                3
+              </td>
+              <td align="left" valign="top">
+                ലൈസൻസ് ലഭിച്ച മൃഗത്തെ സൂക്ഷിക്കുന്ന സ്ഥലം
+              </td>
+              <td align="left" valign="top" >
+                <table width="100%" border="1">
+                  <tr>
+                    <td>
+                      കെട്ടിട നമ്പർ
+                    </td>
+                    <td>
+                      വാർഡ് നമ്പർ
+                    </td>
+                    <td>
+                      വീട്ടുപേര് / സ്ഥലം
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <script> document.write(sessionStorage.getItem("buildingno")) </script>
+                    </td>
+                    <td>
+                      <script> document.write(sessionStorage.getItem("ward")) </script>
+                    </td>
+                    <td>
+                      <script> document.write(sessionStorage.getItem("place")) </script>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center">
+                4
+              </td>
+              <td align="left" valign="top">
+                ലൈസൻസിനായി ഹാജരാക്കിയ വാക്സിനേഷൻ സർട്ടിഫിക്കറ്റിന്റെ കാലാവധി ഉൾപ്പെട്ട വിവരങ്ങൾ
+              </td>
+              <td align="left" valign="top" >
+                <script> document.write(sessionStorage.getItem("licdetails")) </script>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center">
+                5
+              </td>
+              <td align="left" valign="top">
+                ലൈസൻസ് കാലാവധി
+              </td>
+              <td align="left" valign="top" >
+                <script> document.write(sessionStorage.getItem("lp")) </script>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center">
+                6
+              </td>
+              <td align="left" valign="top">
+                ലൈസൻസ് ഫീസ് ഒടുക്കിയത് സംബന്ധിച്ച വിവരങ്ങൾ
+              </td>
+              <td align="left" valign="top" >
+                <table width="100%" valign="center" align="center">
+                  <tr>
+                    <td align="top">
+                      <script> document.write(sessionStorage.getItem("licfee")) </script> /- രൂപ
+                    </td>
+                    <td align="top">
+                      രസീത് നമ്പർ : <script> document.write(sessionStorage.getItem("receiptno")) </script>
+                      <br/>
+                      തീയതി : <script> document.write(sessionStorage.getItem("receiptdate")) </script>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    &nbsp; <br/>
+    <table width="100%" border=0>
+      <tr>
+        <td align="center">
+          <h3>ലൈസൻസി പാലിക്കേണ്ട നിബന്ധനകൾ </h3>
+        </td>
+      </tr>
+      <tr>
+        <td align="justify">
+          <ol>
+            <li>
+              തിരിച്ചറിയലിനായി മൃഗത്തിന്റെ കഴുത്തിൽ ലോഹത്തിലോ തുകലിലോ ഉണ്ടാക്കിയ ബെൽറ്റ് ധരിപ്പിക്കേണ്ടതാണ്
+            </li>
+            <li>
+              ലൈസൻസ് അനുവദിക്കപ്പെട്ട മൃഗത്തെ അതിന്റെ ഉടമസ്ഥൻ തന്റെ പരിസരത്ത് തന്നെ വളർത്തേണ്ടതാണ്. അലഞ്ഞ് തിരിയാനോ പൊതുസമൂഹത്തിന് ശല്യമുണ്ടാക്കാനോ അനുവദിക്കാൻ പാടില്ല
+            </li>
+            <li>
+              ലൈസൻസിന്റെ കാലാവധി അവസാനിക്കുന്നതിന് മുൻപ് അടുത്ത സാമ്പത്തിക വർഷത്തേക്കുള്ള ലൈസൻസ് പുതുക്കി വാങ്ങേണ്ടതാണ്.
+            </li>
+            <li>
+              ഇതിൽ പറഞ്ഞിട്ടുള്ള വ്യവസ്ഥകൾ ലംഘിക്കുന്നതായാൽ 250/- രൂപ (ഇരുന്നൂറ്റി അമ്പത്) വരെ പിഴ ശിക്ഷ ചുമത്തുന്നതാണ്.
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

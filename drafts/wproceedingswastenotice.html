@@ -1,0 +1,148 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("Office settings not found");
+	}
+	function save()
+	{
+		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
+		sessionStorage.setItem("hagar", document.getElementById("hagar").value);
+		sessionStorage.setItem("inspdate", document.getElementById("inspdate").value);
+		sessionStorage.setItem("inspofficer", document.getElementById("inspofficer").value);
+		sessionStorage.setItem("name", document.getElementById("name").value);
+		sessionStorage.setItem("address", document.getElementById("address").value);
+		sessionStorage.setItem("case", document.getElementById("case").value);
+		sessionStorage.setItem("days", document.getElementById("days").value);
+		sessionStorage.setItem("fine", document.getElementById("fine").value);
+
+
+
+
+
+
+		window.open("proceedingswastenotice.html", "_BLANK")
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<center>
+	<h2><u> പ്ലാസ്റ്റിക് വേസ്റ്റ് മാനേജ്മെന്റ് - താത്കാലിക പിഴ ഈടാക്കൽ ഉത്തരവ്</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%" colspan=2>
+				<h3><u> നടപടിക്രമം സംബന്ധിച്ച വിവരങ്ങൾ </u> </h3>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				നടപടിക്രമം നമ്പർ
+			</td>
+			<td>
+				<input type=text id="no">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				തീയതി
+			</td>
+			<td>
+				<input type=text id="date">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഹാജർ
+			</td>
+			<td>
+				<input type=text id="hagar">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h3><u> പരിശോധന സംബന്ധിച്ച വിവരങ്ങൾ </u> </h3>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പരിശോധന നടത്തിയ തീയതി
+			</td>
+			<td>
+				<input type=text id="inspdate">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പരിശോധന നടത്തിയ ഉദ്യോഗസ്ഥൻ
+			</td>
+			<td>
+				<input type=text id="inspofficer">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h3><u> മറ്റ് വിവരങ്ങൾ </u> </h3>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				കുറ്റം ചെയ്ത ആളുടെ പേര്
+			</td>
+			<td>
+				<input type=text id="name">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				വിലാസം
+			</td>
+			<td>
+				<input type=text id="address">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				കുറ്റം ചെയ്തതിന്റെ വിശദാംശം
+			</td>
+			<td>
+				<input type=text id="case">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഫൈൻ അടയ്ക്കേണ്ട കാലാവധി
+			</td>
+			<td>
+				<input type=text id="days"> ദിവസം
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പിഴ തുക
+			</td>
+			<td>
+				<input type=text id="fine">
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<p> </p>
+				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>

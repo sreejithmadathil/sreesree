@@ -1,0 +1,216 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("Office settings not found");
+	}
+	function save()
+	{
+		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
+		sessionStorage.setItem("name", document.getElementById("name").value);
+		sessionStorage.setItem("address", document.getElementById("address").value);
+		sessionStorage.setItem("phone", document.getElementById("phone").value);
+		sessionStorage.setItem("type", document.getElementById("type").value);
+		sessionStorage.setItem("nos", document.getElementById("nos").value);
+		sessionStorage.setItem("age", document.getElementById("age").value);
+		sessionStorage.setItem("color", document.getElementById("color").value);
+		sessionStorage.setItem("mf", document.getElementById("mf").value);
+		sessionStorage.setItem("buildingno", document.getElementById("buildingno").value);
+		sessionStorage.setItem("ward", document.getElementById("ward").value);
+		sessionStorage.setItem("place", document.getElementById("place").value);
+		sessionStorage.setItem("licdetails", document.getElementById("licdetails").value);
+		sessionStorage.setItem("lp", document.getElementById("lp").value);
+		sessionStorage.setItem("licfee", document.getElementById("licfee").value);
+		sessionStorage.setItem("receiptno", document.getElementById("receiptno").value);
+		sessionStorage.setItem("receiptdate", document.getElementById("receiptdate").value);
+
+
+
+
+
+
+		window.open("doglicence.html", "_BLANK")
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<center>
+	<h2><u> പന്നികളെയും പട്ടികളെയും വളർത്തുന്നതിനുള്ള സൂക്ഷിക്കുന്നതിനുള്ള ലൈസൻസ്</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="no">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				തീയതി
+			</td>
+			<td>
+				<input type=text id="date">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസിയുടെ പേര്
+			</td>
+			<td>
+				<input type=text id="name">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസിയുടെ മേൽവിലാസം
+			</td>
+			<td>
+				<input type=text id="address">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ഫോൺ നമ്പർ
+			</td>
+			<td>
+				<input type=text id="phone">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h3><u> ലൈസൻസ് ലഭിച്ച മൃഗത്തെ സംബന്ധിച്ച വിവരം </u> </h3>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				മൃഗത്തിന്റെ ഇനം
+			</td>
+			<td>
+				<input type=text id="type">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				എണ്ണം
+			</td>
+			<td>
+				<input type=text id="nos">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പ്രായം
+			</td>
+			<td>
+				<input type=text id="age">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				നിറം
+			</td>
+			<td>
+				<input type=text id="color">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ആൺ/പെൺ
+			</td>
+			<td>
+				<input type=text id="mf">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" colspan=2>
+				<h3> <u> ലൈസൻസ് ലഭിച്ച മൃഗത്തെ സൂക്ഷിക്കുന്ന സ്ഥലം സംബന്ധിച്ച വിവരം </u> </h3>
+			</td>
+
+		</tr>
+		<tr>
+			<td width="50%">
+				കെട്ടിട നമ്പ‍ർ
+			</td>
+			<td>
+				<input type=text id="buildingno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				വാർഡ് നമ്പ‍ർ
+			</td>
+			<td>
+				<input type=text id="ward">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				വീട്ടുപേര് / സ്ഥലം
+			</td>
+			<td>
+				<input type=text id="place">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസിനായി ഹാജരാക്കിയ വാക്സിനേഷൻ സർട്ടിഫിക്കറ്റിന്റെ കാലാവധി ഉൾപ്പെടെയുള്ള വിവരങ്ങൾ
+			</td>
+			<td>
+				<input type=text id="licdetails">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് കാലാവധി
+			</td>
+			<td>
+				<input type=text id="lp">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് ഫീസ്
+			</td>
+			<td>
+				<input type=text id="licfee">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="receiptno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				രസീത് തീയതി
+			</td>
+			<td>
+				<input type=text id="receiptdate">
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<p> </p>
+				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>

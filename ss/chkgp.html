@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main> Checking for already saved gp profile...
+    <br/>
+    <small>
+    (ഏതാനും സെക്കന്റുകൾക്ക് ശേഷവും പേജ് റീഡയറക്ട് ആയില്ലെങ്കിൽ നിങ്ങളുടെ ബ്രൗസറിലെ Javascript Enable ആണെന്ന് ഉറപ്പ് വരുത്തുക.)
+    </small>
+    </main>
+    <script>
+      if (localStorage.getItem("gpname")==null)
+      {
+          window.location.href = "setgp.html";
+      }
+      else
+      {
+        window.location.href = "../drafts/dirhome.html";
+      }
+    </script>
+    <footer></footer>
+  </body>
+</html>

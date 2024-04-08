@@ -1,0 +1,88 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("Office settings not found");
+	}
+	function save()
+	{
+		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
+		sessionStorage.setItem("nameaddress", document.getElementById("nameaddress").value);
+		sessionStorage.setItem("buildingno", document.getElementById("buildingno").value);
+		sessionStorage.setItem("use", document.getElementById("use").value);
+
+
+
+
+
+
+		window.open("taxpaidcert.html", "_BLANK")
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<center>
+	<h2><u> വസ്തുനികുതി അടവാക്കിയിട്ടുണ്ടെന്ന സാക്ഷ്യപത്രം</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				ഫയൽ നമ്പർ
+			</td>
+			<td>
+				<input type=text id="no">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				തീയതി
+			</td>
+			<td>
+				<input type=text id="date">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				പേര്, വിലാസം
+			</td>
+			<td>
+				<input type=text id="nameaddress">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				കെട്ടിട നമ്പർ
+			</td>
+			<td>
+				<input type=text id="buildingno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ആവശ്യം/ഹാജരാക്കേണ്ട ഓഫീസ്
+			</td>
+			<td>
+				<input type=text id="use">
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<p> </p>
+				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>

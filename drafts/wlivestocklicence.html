@@ -1,0 +1,171 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("Office settings not found");
+	}
+	function save()
+	{
+		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("nameaddress", document.getElementById("nameaddress").value);
+		sessionStorage.setItem("surveyno", document.getElementById("surveyno").value);
+		sessionStorage.setItem("ward", document.getElementById("ward").value);
+		sessionStorage.setItem("buildingno", document.getElementById("buildingno").value);
+		sessionStorage.setItem("type", document.getElementById("type").value);
+		sessionStorage.setItem("class", document.getElementById("class").value);
+		sessionStorage.setItem("nos", document.getElementById("nos").value);
+		sessionStorage.setItem("waste", document.getElementById("waste").value);
+		sessionStorage.setItem("licfrom", document.getElementById("licfrom").value);
+		sessionStorage.setItem("licto", document.getElementById("licto").value);
+		sessionStorage.setItem("licfee", document.getElementById("feedate").value);
+		sessionStorage.setItem("feeno", document.getElementById("feeno").value);
+		sessionStorage.setItem("feedate", document.getElementById("feedate").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
+
+
+
+
+
+		window.open("livestocklicence.html", "_BLANK")
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<center>
+	<h2><u>  ലൈവ് സ്റ്റോക്ക് ഫാം നടത്തുന്നതിനുള്ള ലൈസൻസ്</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="no">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ലൈസൻസിയുടെ പേരും മേൽവിലാസവും
+			</td>
+			<td>
+				<input type=text id="nameaddress">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				സർവ്വെ നമ്പർ
+			</td>
+			<td>
+				<input type=text id="surveyno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				വാർഡ് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="ward">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				കെട്ടിട നമ്പർ
+			</td>
+			<td>
+				<input type=text id="buildingno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				നൽകപ്പെടുന്ന ഫാമിന്റെ സ്വഭാവം (കന്നുകാലി ഫാം/ ആട് ഫാം/ പന്നി ഫാം /മുയൽ ഫാം/ പൗൾട്രി ഫാം/ സംയോജിത ഫാം)
+			</td>
+			<td>
+				<input type=text id="type">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ഫാമിന്റെ തരം (ക്ലാസ്)
+			</td>
+			<td>
+				<input type=text id="class">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ഫാമിൽ വളർത്താൻ അനുവദിക്കപ്പെടുന്ന മുഗങ്ങളുടെ/പക്ഷികളുടെ പരമാവധി എണ്ണം (6-ാം തരം ഫാമിന്റെ കാര്യത്തിൽ കുടിയ പരിധി ബാധകമല്ല)
+			</td>
+			<td>
+				<input type=text id="nos">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ഫാമിൽ പാലിച്ച് പോരേണ്ട മാലിന്യ നിർമ്മാർജ്ജന ക്രമീകരണങ്ങൾ (വിശദ വിവരങ്ങൾ നൽകണം)
+			</td>
+			<td>
+				<input type=text id="waste">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ലൈസൻസ് കാലാവധി
+			</td>
+			<td>
+				<input type=text id="licfrom"> മുതൽ <input type=text id="licto"> വരെ
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ഈടാക്കിയ ലൈസൻസ് ഫീസ്
+			</td>
+			<td>
+				<input type=text id="licfee">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 രസീത് നമ്പർ
+			</td>
+			<td>
+				<input type=text id="feeno">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 രസീത് തീയതി
+			</td>
+			<td>
+				<input type=text id="feedate">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				 ലൈസൻസ് തീയതി
+			</td>
+			<td>
+				<input type=text id="date">
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td></td>
+			<td>
+				<p> </p>
+				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>

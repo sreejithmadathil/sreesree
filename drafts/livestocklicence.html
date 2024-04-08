@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Common certificate format created by Arun Haridas</title>
+    <script>
+
+  alert("ഇനി ലഭ്യമാകുന്ന റിപ്പോർട്ട് CTRL+A ഉപയോഗിച്ച് സെലക്ട് ചെയ്യുക ശേഷം CTRV+C ചയ്ത് കോപ്പി ചെയ്ത് ആയത് ILGMS ടെംപ്ലേറ്റിൽ CTRL+V ഉപയോഗിച്ച് പേസ്റ്റ് ചെയ്ത് ആവശ്യമായ തിരുത്തലുകൾ വരുത്തി ഉപയോഗിക്കുക ");
+</script>
+  </head>
+  <body>
+    <center>
+      <table width="100%">
+      <tr>
+      <td align="center">
+      <small><h4>ഫോറം 3</h4></small> <br/>
+      <small>(7-ാം ചട്ടം (2)-ാം ഉപചട്ടം കാണുക)</small> <br/>
+      ലൈവ് സ്റ്റോക്ക് ഫാം നടത്തുന്നതിനുള്ള ലൈസൻസ്<br/>
+      <u><script>document.write(localStorage.getItem("gpname"));</script>  ഗ്രാമപഞ്ചായത്ത് </u>
+      <br/>
+      </td>
+      </tr>
+      </table>
+      <table width="100%">
+        <tr>
+          <td valign="top" width="5%">
+            1
+          </td>
+          <td valign="top" width="35%">
+            ലൈസൻസ് നമ്പർ
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("no")) </script>
+          </td>
+        <tr>
+        <tr>
+          <td valign="top">  2 </td>
+          <td valign="top">
+            ലൈസൻസിയുടെ പേരും മേൽവിലാസവും
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("nameaddress")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 3</td>
+          <td valign="top">
+            കെട്ടിട നമ്പർ, വാർഡ് നമ്പർ, സർവ്വെ നമ്പർ
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("ward")) </script> / <script> document.write(sessionStorage.getItem("building")) </script>
+            <br/>
+            സർവ്വെ നമ്പർ : <script> document.write(sessionStorage.getItem("surveyno")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 4 </td>
+          <td valign="top">
+             നൽകപ്പെടുന്ന ഫാമിന്റെ സ്വഭാവം (കന്നുകാലി ഫാം/ ആട് ഫാം/ പന്നി ഫാം /മുയൽ ഫാം/ പൗൾട്രി ഫാം/ സംയോജിത ഫാം)
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("type")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 5 </td>
+          <td valign="top">
+             ഫാമിന്റെ തരം (ക്ലാസ്)
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("class")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 6 </td>
+          <td valign="top">
+             ഫാമിൽ വളർത്താൻ അനുവദിക്കപ്പെടുന്ന മുഗങ്ങളുടെ/പക്ഷികളുടെ പരമാവധി എണ്ണം (6-ാം തരം ഫാമിന്റെ കാര്യത്തിൽ കുടിയ പരിധി ബാധകമല്ല)
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("nos")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 7 </td>
+          <td valign="top">
+             ഫാമിൽ പാലിച്ച് പോരേണ്ട മാലിന്യ നിർമ്മാർജ്ജന ക്രമീകരണങ്ങൾ (വിശദ വിവരങ്ങൾ നൽകണം)
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("no")) </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 8 </td>
+          <td valign="top">
+            ലൈസൻസിന്റെ കാലാവധി
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("licfrom")) </script> മുതൽ <script> document.write(sessionStorage.getItem("licto")) </script> വരെ
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"> 9 </td>
+          <td valign="top">
+             ഈടാക്കിയ ലൈസൻസ് ഫീസ്
+             <br/>
+             ലൈസൻസ് ഫീസ് അടച്ചതിന്റെ രസീത് നമ്പരും തീയതിയും
+          </td>
+          <td valign="top">
+            <script> document.write(sessionStorage.getItem("licfee")) </script>
+            <br/>
+            രസീത് നമ്പർ : <script> document.write(sessionStorage.getItem("feeno")) </script>, തീയതി :  <script> document.write(sessionStorage.getItem("feedate")) </script>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <br/>
+    <br/>
+    <br/>
+    <table width="100%">
+      <tr>
+        <td align="left">
+          സ്ഥലം : <script>document.write(localStorage.getItem("gpname"));</script>
+          <br/>
+          തീയതി : <script> document.write(sessionStorage.getItem("date")) </script>
+        </td>
+        <td align="right">
+
+        </td>
+      <tr>
+    </table>
+    <br/>
+
+
+
+
+
+
+
+  </body>
+</html>
